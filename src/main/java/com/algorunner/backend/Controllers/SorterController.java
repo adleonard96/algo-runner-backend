@@ -23,6 +23,6 @@ public class SorterController {
         } catch (Error e){
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        return new ResponseEntity<>(returnValue, HttpStatus.OK);
+        return new ResponseEntity<SortedReturn>(returnValue, HttpStatus.OK);
     }
 }
