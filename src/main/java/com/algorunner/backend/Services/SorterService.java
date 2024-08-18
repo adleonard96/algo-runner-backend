@@ -1,7 +1,10 @@
 package com.algorunner.backend.Services;
+import org.springframework.stereotype.Service;
+
 import com.algorunner.backend.Models.SortedReturn;
 import com.algorunner.backend.Utilities.Timer;
 
+@Service
 public class SorterService {
     public SorterService(){}
 

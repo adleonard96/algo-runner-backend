@@ -13,8 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("/api/sorting")
 public class SorterController {
-    private SorterService sorter = new SorterService();
+    private final SorterService sorter;
 
+    public SorterController(SorterService sorterService){
+        this.sorter = sorterService;
+    }
+    
     @PostMapping("/bubbleSort")
     public ResponseEntity<SortedReturn> bubbleSort(@RequestBody int[] nums) {
         SortedReturn returnValue;
