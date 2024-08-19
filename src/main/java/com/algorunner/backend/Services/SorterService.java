@@ -27,4 +27,10 @@ public class SorterService {
         }
         return new SortedReturn(clock.stop(), nums);
     }    
+
+    public SortedReturn insertionSort(int[] nums){
+        Timer clock = new Timer();
+        // TODO: Added logic for insertion sort
+        return new SortedReturn(clock.stop(), nums);
+    }
 }

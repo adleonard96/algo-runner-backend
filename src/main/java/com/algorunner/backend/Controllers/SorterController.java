@@ -35,4 +35,16 @@ public class SorterController {
         }
         return new ResponseEntity<SortedReturn>(returnValue, HttpStatus.OK);
     }
+
+    @PostMapping("/insertionSort")
+    public ResponseEntity<SortedReturn> insertionSort(@RequestBody int[] nums) {
+        SortedReturn returnValue;
+        try {
+            returnValue = sorter.insertionSort(nums);
+        } catch (Error e){
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return new ResponseEntity<SortedReturn>(returnValue, HttpStatus.OK);
+    }
+    
 }
