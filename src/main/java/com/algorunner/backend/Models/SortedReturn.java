@@ -1,6 +1,8 @@
 package com.algorunner.backend.Models;
 
-
+/*
+ * Model for responses of Sorted Number algorithms
+ */
 public class SortedReturn {
     private long executionTime;
     private int[] sortedValues;

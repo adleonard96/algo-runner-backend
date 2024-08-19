@@ -19,6 +19,12 @@ public class SorterController {
         this.sorter = sorterService;
     }
     
+    /**
+     * Sorts an array of integers using the bubble sort algorithm.
+     *
+     * @param nums the array of integers to be sorted
+     * @return a ResponseEntity containing the sorted array and the HTTP status code
+     */
     @PostMapping("/bubbleSort")
     public ResponseEntity<SortedReturn> bubbleSort(@RequestBody int[] nums) {
         SortedReturn returnValue;
