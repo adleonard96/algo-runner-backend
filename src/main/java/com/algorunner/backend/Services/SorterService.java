@@ -33,4 +33,14 @@ public class SorterService {
         // TODO: Added logic for insertion sort
         return new SortedReturn(clock.stop(), nums);
     }
+
+    /**
+     * Sorts array of integers using the selection sort algorithm
+     * 
+     * @param nums the array of integers to be sorted
+     * @return a SortedReturn object containing the sorted array and the time taken to sort
+     */
+    public SortedReturn selectionSort(int[] nums){
+        
+    }
 }
