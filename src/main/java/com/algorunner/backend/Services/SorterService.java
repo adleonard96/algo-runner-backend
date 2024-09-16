@@ -54,6 +54,6 @@ public class SorterService {
             nums[minIdx] = nums[i];
             nums[i] = temp;
         }
-        //TODO: Make the return object
+        return new SortedReturn(clock.stop(), nums);
     }
 }
