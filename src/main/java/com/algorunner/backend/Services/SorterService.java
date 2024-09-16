@@ -56,4 +56,12 @@ public class SorterService {
         }
         return new SortedReturn(clock.stop(), nums);
     }
+
+    //Merge Sort
+    //Quick Sort
+    //Heap sort
+    //Counting Sort
+    //Radix Sort
+    //Bucket Sort
+    //...
 }
