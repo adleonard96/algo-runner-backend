@@ -58,7 +58,7 @@ public class SorterService {
     }
 
     public static SorterService mergeSort(int[] nums){
-        
+        return new SortedReturn(nums);
     }
     //Quick Sort
     //Heap sort
