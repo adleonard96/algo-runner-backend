@@ -57,7 +57,9 @@ public class SorterService {
         return new SortedReturn(clock.stop(), nums);
     }
 
-    //Merge Sort
+    public static SorterService mergeSort(int[] nums){
+        
+    }
     //Quick Sort
     //Heap sort
     //Counting Sort
