@@ -64,17 +64,17 @@ public class SorterService {
     //Quick Sort
     //Heap sort
     public static SorterService countSort(int[] nums){
-        int N = inputArray.length;
+        int N = nums.length;
         int M = 0;
 
         for (int i = 0; i < N; i++) {
-            M = Math.max(M, inputArray[i]);
+            M = Math.max(M, nums[i]);
         }
 
         int[] countArray = new int[M + 1];
 
         for (int i = 0; i < N; i++) {
-            countArray[inputArray[i]]++;
+            countArray[nums[i]]++;
         }
 
         for (int i = 1; i <= M; i++) {
@@ -84,8 +84,8 @@ public class SorterService {
         int[] outputArray = new int[N];
 
         for (int i = N - 1; i >= 0; i--) {
-            outputArray[countArray[inputArray[i]] - 1] = inputArray[i];
-            countArray[inputArray[i]]--;
+            outputArray[countArray[nums[i]] - 1] = nums[i];
+            countArray[nums[i]]--;
         }
 
         return new SortedReturn(clock.stop(), nums);
