@@ -86,6 +86,9 @@ public class SorterService {
         for (int i = N - 1; i >= 0; i--) {
             outputArray[countArray[inputArray[i]] - 1] = inputArray[i];
             countArray[inputArray[i]]--;
+        }
+
+        return new SortedReturn(clock.stop(), nums);
     }
     //Radix Sort
     //Bucket Sort
